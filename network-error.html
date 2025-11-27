@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Video Downloader</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .box{
+            background: #fff;
+            padding: 20px;
+            width: 330px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        video{
+            width: 70%;
+            border-radius: 10px;
+        }
+ 
+        .btn{
+            display: block;
+            margin-top: 15px;
+            background: #007bff;
+            padding: 12px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+        .btn:hover{
+            background: #005fcc;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="box">
+        <h2>Download Video</h2>
+       
+       <video src="https://archive.org/download/img-1007_202511/IMG_1007.mp4" controls controlsList="nodownload noplaybackrate" disablePictureInPicture></video>
+        <!-- Video Download Button -->
+        <a href="https://archive.org/download/img-1007_202511/IMG_1007.MOV" class="btn">Download Video</a>
+    </div>
+
+</body>
+</html>
