@@ -1,0 +1,96 @@
+:root{
+    --bg1:#1c1e21;
+    --bg2:#242a2f;
+    --card:#1c1e21;
+    --text:#e4e6eb;
+    --muted:#b0b3b8;
+    --line:#3a3b3c;
+    --primary:#0095f6;
+    --primary-hover:#0077cc;
+    --radius:12px;
+  }
+
+  html,body{height:100%}
+  body{
+    margin:0;
+    font-family: Arial, system-ui, sans-serif;
+    background: radial-gradient(120% 120% at 20% 0%, #20262b 0%, var(--bg2) 55%, var(--bg1) 100%);
+    display:grid;
+    place-items:center;
+    color:var(--text);
+  }
+
+  .shell{
+    width:340px;
+    padding:60px 40px 36px;   /* PC/Laptop पर ज्यादा space */
+    background:var(--card);
+    border-radius:10px;
+    box-shadow:0 6px 24px rgba(0,0,0,.45);
+    box-sizing:border-box;
+    text-align:center;
+  }
+
+  .logo{
+    display:grid;
+    place-items:center;
+    margin-bottom:36px;
+  }
+  .logo img{width:64px;height:64px;border-radius:14px}
+
+  h2{
+    margin:0 0 14px;
+    font-size:20px;
+    font-weight:600;
+  }
+
+  p{
+    font-size:14px;
+    color:var(--muted);
+    margin:0 0 22px;
+    line-height:1.5;
+  }
+
+  .btn{
+    display:block;
+    height:46px;
+    line-height:46px;
+    border-radius:999px;
+    background:var(--primary);
+    color:white;
+    font-weight:700;
+    font-size:15px;
+    cursor:pointer;
+    text-decoration:none;
+    margin-top:4px;
+    user-select:none;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+    transition:background .2s;
+    border:none;
+    outline:none;
+    text-align:center;
+    width:100%;
+    box-sizing:border-box;
+    letter-spacing:.5px;
+    font-family: Arial, system-ui, sans-serif;
+    /* padding:0 16px; */
+    
+  }
+  .btn:hover{background:var(--primary-hover)}
+
+  .meta{
+    text-align:center;
+    margin-top:30px;
+    color:var(--muted);
+    font-size:12px;
+  }
+
+  /* Mobile responsive */
+  @media (max-width:480px){
+    .shell{
+      width:92vw;
+      padding:60px 20px 50px;
+    }
+    .logo img{width:56px;height:56px}
+    h2{font-size:18px}
+    p{font-size:13px}
+  }
